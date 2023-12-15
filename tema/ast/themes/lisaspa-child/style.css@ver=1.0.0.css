@@ -1,0 +1,271 @@
+/**
+* Theme Name: Lisaspa Child
+* Description: 
+* Author: Team99
+* Template: lisaspa
+* Version: 1.0.0
+*/
+
+.with_frm_style .frm_message, .frm_success_style {
+    border: 1px solid #000!important;
+    border-color: #000!important;
+    background-color: transparent!important;
+    color: #000!important;
+    text-align: center!important;
+}
+
+.with_frm_style .frm_message p {
+    margin-bottom: 10px!important;
+    color: #000!important;
+}
+
+
+/* HELPER */
+.h1-mod h1{font-size: calc(var(--h2-min-font-size) * 1px + (var(--h2-max-font-size) - var(--h2-min-font-size)) * ((100vw - 320px) / 1600))!important;}
+
+
+
+
+/* TESTO A SCORRIMENTO */
+.js-marquee {
+    font-size: 80px!important;
+    font-weight: 300!important;
+	line-height: 90px!important;
+	font-family: 'Spartan',sans-serif!important;
+	padding-top: 20px;
+}
+
+/* HEADER */
+.wpml-ls-legacy-list-horizontal {
+    display: inline-block;
+}
+
+.wpml-ls-legacy-list-horizontal a {
+	color: #000;
+}
+
+/* MENU */
+.header.opened[data-arts-header-overlay-theme-text="light"] a {color: var(--color-white); text-transform: uppercase!important; font-weight: 300;}
+.voce-sottomenu a {font-size: 1.5vw!important;}
+.header__wrapper-menu {width: 70%!important; margin-left: 28%!important;}
+
+.header_menu-right .container.header__wrapper-overlay-widgets.split-text {
+    display: none;
+}
+
+.menu-overlay > .menu-item:not(.voce-sottomenu) {
+    line-height: 0;
+    height: 75px;
+}
+.menu-overlay > .menu-item.voce-sottomenu { line-height: 0; }
+.menu-item .menu-overlay__item-wrapper.split-text { line-height: 1.6; }
+.menu-overlay > .menu-item:not(.voce-sottomenu) + .voce-sottomenu { margin-top: 20px; }
+
+
+.menu-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    object-fit: cover;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in;
+}
+
+.menu-bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+img.menu-bg-image__single {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in;
+}
+
+.menu-bg-image.menu-bg-image__show,
+img.menu-bg-image__single.menu-bg-image__show {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s ease-in;
+}
+
+
+  
+.header_sticky{box-shadow: none!important;  background: transparent!important; }
+
+/* TITOLI */
+h4.elementor-heading-title {line-height:1.62!important;}
+
+.section-content__heading.split-text .split-text__line.overflow { overflow: visible; }
+.section-content__heading.split-text .split-text__line.overflow .split-text__word { transform: translate(0, 10px)!important; }
+
+
+
+
+/* PULSANTI - ICONE */
+.be-human-icon .circle-button__inner .circle-button__icon {
+    display: block!important;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+}
+.be-human-icon .circle-button__inner:after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background-image: url(https://lisaspa.team99.it/wp-content/uploads/2021/07/lisa_icona_behuman.png);
+    background-size: 80px 80px!important;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#js-cursor .cursor__icon.material-icons.control_point {
+    color: #000!important;
+}
+
+.be-human-icon .circle-button__icon .material-icons.control_point {
+    display:none!important;
+}
+
+
+/* SLIDER COLLEZIONI */
+
+.slider__counter_current {font-family: 'Spartan'!important; font-weight: 400; font-size: 42px; line-height: 1.3;}
+.slider__counter_total {font-family: 'Spartan'!important; font-weight: 400!important; line-height: 1.4!important;}
+
+img.logo-collezione-principale {width: 120px!important; padding-bottom:36px!important;}
+
+.slider__subheading.mb-1.h1.split-text{font-size:58px!important;}
+h2.slider__heading.h2.split-text{font-size:36px!important;}
+
+
+
+/* BLOCCHI TESTO */
+
+.section__headline {height: 3px!important; background-color: #000!important; margin-bottom:30px!important;}
+
+/* FOOTER */
+
+/*upper*/
+.footer__area .col-lg-3,
+.footer__area .footer__column {max-width: 33%!important;}
+.footer__area .col-lg-3{flex:0 0 33%!important;}
+
+/*lower*/
+.footer__area .align-items-center{align-items:start!important}
+
+
+.footer__area .widget p {font-size: 14px;}
+.footer__area .widget_nav_menu ul.menu > li a {font-size: 14px;}
+
+h2.widgettitle {
+    font-size: 16px!important;
+    font-weight: 300;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #000;
+}
+/*
+.footer__area .align-items-center {align-items: start!important; justify-content: space-between;}*/
+.social__item a{font-size:18px!important; color:#000!important}
+.social__item a:hover{color:#666!important}
+
+
+
+.menu-overlay > .menu-item:not(.voce-sottomenu){height:auto!important;margin-bottom: 0px;margin-top: 20px;}
+	.menu-overlay > .menu-item:not(.voce-sottomenu) + .voce-sottomenu{margin-top:0px!important;}
+
+/*
+ RESPONSIVE
+----------------------------* /
+
+/* mobile */
+@media(min-width:1401px){
+	
+}
+	
+@media(max-width:1400px){
+	
+}
+	
+@media(max-width:1280px){
+	
+}
+
+@media(max-width:1210px){
+	.text-big-mobile h2{font-size:36px!important;}
+}
+
+@media(max-width:1024px){
+	.be-human-icon .circle-button__label>div {bottom:22px;}
+}
+	
+@media(max-width:991px){
+	.header__wrapper-menu{width: 100%!important;margin-left: 0%!important;}
+	
+	/*slider*/
+	.slider__counter_current,
+	.slider__counter_total{font-size:22px;color:#fff;}
+	.slider__counter-divider{border:1px solid #ffffff80;}
+	img.logo-collezione-principale{filter:invert(1)!important;}
+	.slider-halfscreen-projects__content .slider__subheading,
+	.slider-halfscreen-projects__content .slider__heading,
+	.slider-halfscreen-projects__content p,
+	.slider-halfscreen-projects__content h5{color:#fff!important;}
+	
+	.slider-halfscreen-projects__content .button{border:1px solid #fff!important;}
+	.slider-halfscreen-projects__content .button span,
+	.slider-halfscreen-projects__content .button.button_bordered.bg-dark-1{color:#fff!important;}
+	
+	
+	
+}
+@media(max-width:890px){
+	.text-big-mobile h2{font-size:26px!important;}
+}
+
+@media(max-width:840px){
+	.footer__area .widgettitle{font-size:12px!important;}
+	.voce-sottomenu a{font-size:16px!important;}
+	.header__wrapper-menu .menu-item:not(.voce-sottomenu) a{font-size:28px!important;font-weight:500px!important;}
+	
+	
+	.scroll-big-txt .js-marquee, .js-marquee{font-size:50px!important;padding-top:10px;}
+}
+@media(max-width:650px){
+	.footer__area .widgettitle{font-size:16px!important;}
+	.footer__area .col-lg-3,
+	.footer__area .footer__column {max-width: 100%!important;}
+	.footer__area .col-lg-3{flex:0 0 100%!important;}
+}
+@media(max-width:576px){
+	.slider__counter_current,
+	.slider__counter_total{font-size:16px;color:#fff;}
+}
+
+@media(max-width:400px){
+	.header__wrapper-menu .menu-item:not(.voce-sottomenu) a{font-size:24px!important;font-weight:500px!important;}
+}
+
+
+/* css wpml-legacy-horizontal */
+.wpml-ls-legacy-list-horizontal{border:1px solid transparent;padding:7px;clear:both}
+.wpml-ls-legacy-list-horizontal>ul{padding:0;margin:0 !important;list-style-type:none}
+.wpml-ls-legacy-list-horizontal .wpml-ls-item{padding:0;margin:0;list-style-type:none;display:inline-block}.wpml-ls-legacy-list-horizontal a{display:block;text-decoration:none;padding:5px 10px 6px;line-height:1}.wpml-ls-legacy-list-horizontal a span{vertical-align:middle}.wpml-ls-legacy-list-horizontal a span.wpml-ls-bracket{vertical-align:unset}.wpml-ls-legacy-list-horizontal .wpml-ls-flag{display:inline;vertical-align:middle}.wpml-ls-legacy-list-horizontal .wpml-ls-flag+span{margin-left:.4em}.rtl .wpml-ls-legacy-list-horizontal .wpml-ls-flag+span{margin-left:0;margin-right:.4em}.wpml-ls-legacy-list-horizontal.wpml-ls-statics-footer{margin-bottom:30px}.wpml-ls-legacy-list-horizontal.wpml-ls-statics-footer>ul{text-align:center}
+

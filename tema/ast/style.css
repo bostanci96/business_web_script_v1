@@ -1,0 +1,155 @@
+.bannerWrapper{
+    z-index: 99999;
+    width: 100%;
+    position: relative;
+    float: right;
+    text-align: right;}
+.bannerAreas{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    overflow: unset;
+    background: #fff0;
+}
+.topText{
+    width: auto;
+    display: flex;
+    position: absolute;
+    top: -35px;
+    font-size: 81px;
+    color: #000000;
+    right: calc(50% - 117px);
+    font-weight: bold;
+    line-height: 81px;
+}
+.lefText{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    width: auto;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    font-size: 81px;
+    color: #000000;
+    left: -40px;
+    font-weight: bold;
+    line-height: 100%;
+}
+.rightText{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    width: auto;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    font-size: 81px;
+    color: #000000;
+    right: -50px;
+    font-weight: bold;
+    line-height: 100%;
+}
+.bannerWrapper a{}
+.bannerWrapper a img{}
+
+.aboutDesc{
+}
+.aboutDesc h2{
+    color: #000000;
+    font-size: 78px;
+    font-weight: 700;
+    margin:76px 0px 60px 0px!important;
+}
+.aboutDesc p{
+    font-size: 26px;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.aboutDesc a{
+    border: 1px solid #707070;
+    padding: 8px 10px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 300;
+}
+
+.br100{border-radius: 100px;}
+
+.br100 .mask-reveal__layer-2{border-radius: 100px;}
+
+.mt110{margin-top: 110px;}
+
+.footer .menu > li a{padding:0px!important}
+
+.footer.bg-light-3 {
+    background-color: #1b222c!important;
+    margin-top: 200px;
+}
+
+h2.widgettitle {
+    letter-spacing: 5px;
+    color: white;
+    border-bottom: 0px solid #fff;
+    font-size: 23px!important;
+    font-weight: bold;
+    margin-bottom: 30px!important;
+    line-height: 100%;
+}
+
+.footer .menu > li a, .footer__area .widget_nav_menu ul.menu > li a {
+    padding: 0px!important;
+    color: #ffffff75;
+    font-size: 18px;
+}
+.footer__area{
+    border-top: 1px solid #eaeef350;
+    padding-top: 90px;
+}
+
+.ftLogoArea{}
+.ftLogoArea img{    width: 310px;
+    margin: 15px;
+    margin-left: -10px;}
+@media only screen and (max-width: 768px) {
+ .elementor .elementor-hidden-mobile, .elementor .elementor-hidden-phone {
+    display: block; 
+}
+.topText {
+    width: auto;
+    display: flex;
+    position: absolute;
+    top: -35px;
+    font-size: 61px;
+    color: #000000;
+    right: calc(50% - 85px);
+    font-weight: bold;
+    line-height: 81px;
+}
+.lefText {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    width: auto;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    font-size: 55px;
+    color: #000000;
+    left: -20px;
+    font-weight: bold;
+    line-height: 100%;
+}
+.rightText {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    width: auto;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    font-size: 51px;
+    color: #000000;
+    right: -24px;
+    font-weight: bold;
+    line-height: 100%;
+}
+}
